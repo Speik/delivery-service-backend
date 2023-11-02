@@ -1,0 +1,2113 @@
+{
+	"info": {
+		"_postman_id": "1fb2c121-586b-4982-9794-1ef65564b796",
+		"name": "Delivery Service API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17835556"
+	},
+	"item": [
+		{
+			"name": "managers",
+			"item": [
+				{
+					"name": "/managers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZkZjdlNmU0LTE0ZTgtNGI4NS04ZWE1LTIxNDRiOGJmMWEwNCIsIm5hbWUiOiJBZG1pbiIsImlhdCI6MTY5NjYyNTA2MSwiZXhwIjoxNjk2NjUzODYxfQ.brgeYd9jZKhI412uwNdZRxFuTETDYdrEMnAm2swZ8qQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Johnna\",\n    \"password\": \"1234567\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/managers",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"managers"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/managers",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Johnna\",\n    \"password\": \"1234567\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/managers",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"managers"
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/managers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZkZjdlNmU0LTE0ZTgtNGI4NS04ZWE1LTIxNDRiOGJmMWEwNCIsIm5hbWUiOiJBZG1pbiIsImlhdCI6MTY5NjYyNTA2MSwiZXhwIjoxNjk2NjUzODYxfQ.brgeYd9jZKhI412uwNdZRxFuTETDYdrEMnAm2swZ8qQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/managers?offset=0&limit=20",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"managers"
+							],
+							"query": [
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/managers",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/managers?offset=0&limit=20",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"managers"
+									],
+									"query": [
+										{
+											"key": "offset",
+											"value": "0"
+										},
+										{
+											"key": "limit",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/managers/search",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZkZjdlNmU0LTE0ZTgtNGI4NS04ZWE1LTIxNDRiOGJmMWEwNCIsIm5hbWUiOiJBZG1pbiIsImlhdCI6MTY5NjYyNTA2MSwiZXhwIjoxNjk2NjUzODYxfQ.brgeYd9jZKhI412uwNdZRxFuTETDYdrEMnAm2swZ8qQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/managers/search?term=john",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"managers",
+								"search"
+							],
+							"query": [
+								{
+									"key": "term",
+									"value": "john"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/managers/search",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/managers/search?term=john",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"managers",
+										"search"
+									],
+									"query": [
+										{
+											"key": "term",
+											"value": "john"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/managers/:id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZkZjdlNmU0LTE0ZTgtNGI4NS04ZWE1LTIxNDRiOGJmMWEwNCIsIm5hbWUiOiJBZG1pbiIsImlhdCI6MTY5NjYyNTA2MSwiZXhwIjoxNjk2NjUzODYxfQ.brgeYd9jZKhI412uwNdZRxFuTETDYdrEMnAm2swZ8qQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/managers/82d1873b-4be6-446d-bf14-17bccd65f348",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"managers",
+								"82d1873b-4be6-446d-bf14-17bccd65f348"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/managers/:id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/managers/82d1873b-4be6-446d-bf14-17bccd65f348",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"managers",
+										"82d1873b-4be6-446d-bf14-17bccd65f348"
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/managers/:id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZkZjdlNmU0LTE0ZTgtNGI4NS04ZWE1LTIxNDRiOGJmMWEwNCIsIm5hbWUiOiJBZG1pbiIsImlhdCI6MTY5NjYyNTA2MSwiZXhwIjoxNjk2NjUzODYxfQ.brgeYd9jZKhI412uwNdZRxFuTETDYdrEMnAm2swZ8qQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/managers/82d1873b-4be6-446d-bf14-17bccd65f348",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"managers",
+								"82d1873b-4be6-446d-bf14-17bccd65f348"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/managers/:id",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/managers/82d1873b-4be6-446d-bf14-17bccd65f348",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"managers",
+										"82d1873b-4be6-446d-bf14-17bccd65f348"
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "customers",
+			"item": [
+				{
+					"name": "/customers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZkZjdlNmU0LTE0ZTgtNGI4NS04ZWE1LTIxNDRiOGJmMWEwNCIsIm5hbWUiOiJBZG1pbiIsImlhdCI6MTY5NzI5ODUwMywiZXhwIjoxNjk3MzI3MzAzfQ.QbsvZBkMEpft_hJTA-bD104c6X5KDwa6t8laX1TqgC8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/customers?offset=0&limit=20",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"customers"
+							],
+							"query": [
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/customers",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/customers?offset=0&limit=20",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"customers"
+									],
+									"query": [
+										{
+											"key": "offset",
+											"value": "0"
+										},
+										{
+											"key": "limit",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/customers/search",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZkZjdlNmU0LTE0ZTgtNGI4NS04ZWE1LTIxNDRiOGJmMWEwNCIsIm5hbWUiOiJBZG1pbiIsImlhdCI6MTY5NzI5ODUwMywiZXhwIjoxNjk3MzI3MzAzfQ.QbsvZBkMEpft_hJTA-bD104c6X5KDwa6t8laX1TqgC8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/customers/search?term=2",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"customers",
+								"search"
+							],
+							"query": [
+								{
+									"key": "term",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/customers/search",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/customers/search?term=john",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"customers",
+										"search"
+									],
+									"query": [
+										{
+											"key": "term",
+											"value": "john"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "categories",
+			"item": [
+				{
+					"name": "/categories",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZkZjdlNmU0LTE0ZTgtNGI4NS04ZWE1LTIxNDRiOGJmMWEwNCIsIm5hbWUiOiJBZG1pbiIsImlhdCI6MTY5Njg3MTA1NiwiZXhwIjoxNjk2ODk5ODU2fQ.ONeVwnB-RDxbMr0y2tDVZ3uJMk_QJUoZFT1sQ93FwFU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Sides\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/categories",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "categories",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Soup\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/categories",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"categories"
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/categories",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZkZjdlNmU0LTE0ZTgtNGI4NS04ZWE1LTIxNDRiOGJmMWEwNCIsIm5hbWUiOiJBZG1pbiIsImlhdCI6MTY5Njg3MTA1NiwiZXhwIjoxNjk2ODk5ODU2fQ.ONeVwnB-RDxbMr0y2tDVZ3uJMk_QJUoZFT1sQ93FwFU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/categories?offset=0&limit=20",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"categories"
+							],
+							"query": [
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/categories",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/categories?offset=0&limit=20",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"categories"
+									],
+									"query": [
+										{
+											"key": "offset",
+											"value": "0"
+										},
+										{
+											"key": "limit",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/categories/search",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZkZjdlNmU0LTE0ZTgtNGI4NS04ZWE1LTIxNDRiOGJmMWEwNCIsIm5hbWUiOiJBZG1pbiIsImlhdCI6MTY5Njg3MTA1NiwiZXhwIjoxNjk2ODk5ODU2fQ.ONeVwnB-RDxbMr0y2tDVZ3uJMk_QJUoZFT1sQ93FwFU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/categories/search?term=soup",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"categories",
+								"search"
+							],
+							"query": [
+								{
+									"key": "term",
+									"value": "soup"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/categories/search",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/categories/search?term=soup",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"categories",
+										"search"
+									],
+									"query": [
+										{
+											"key": "term",
+											"value": "soup"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/categories/:id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZkZjdlNmU0LTE0ZTgtNGI4NS04ZWE1LTIxNDRiOGJmMWEwNCIsIm5hbWUiOiJBZG1pbiIsImlhdCI6MTY5Njg3MTA1NiwiZXhwIjoxNjk2ODk5ODU2fQ.ONeVwnB-RDxbMr0y2tDVZ3uJMk_QJUoZFT1sQ93FwFU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/categories/27014c38-3e5f-4c1f-b2a7-16b51e05b801",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"categories",
+								"27014c38-3e5f-4c1f-b2a7-16b51e05b801"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/categories/:id",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/categories/27014c38-3e5f-4c1f-b2a7-16b51e05b801",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"categories",
+										"27014c38-3e5f-4c1f-b2a7-16b51e05b801"
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "dishes",
+			"item": [
+				{
+					"name": "/dishes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZkZjdlNmU0LTE0ZTgtNGI4NS04ZWE1LTIxNDRiOGJmMWEwNCIsIm5hbWUiOiJBZG1pbiIsImlhdCI6MTY5Njk2MzE3MiwiZXhwIjoxNjk2OTkxOTcyfQ.AVMRnCSS011F0zK97lxA6FHaPrO5uKdA6igMA_SmtAg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Chicken soup",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "categoryId",
+									"value": "38079695-8a9b-4b4d-8c92-f4743a27dec2",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Warm delicious soup",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/home/sofia/Загрузки/soup.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/dishes",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"dishes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/dishes",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Chicken Soup",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "10",
+											"type": "text"
+										},
+										{
+											"key": "categoryId",
+											"value": "38079695-8a9b-4b4d-8c92-f4743a27dec2",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Warm delicious soup",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/home/sofia/Загрузки/soup.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{API_URL}}/dishes",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"dishes"
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/dishes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZkZjdlNmU0LTE0ZTgtNGI4NS04ZWE1LTIxNDRiOGJmMWEwNCIsIm5hbWUiOiJBZG1pbiIsImlhdCI6MTY5NzI5ODUwMywiZXhwIjoxNjk3MzI3MzAzfQ.QbsvZBkMEpft_hJTA-bD104c6X5KDwa6t8laX1TqgC8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/dishes?offset=0&limit=20",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"dishes"
+							],
+							"query": [
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/dishes",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/dishes?offset=0&limit=20",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"dishes"
+									],
+									"query": [
+										{
+											"key": "offset",
+											"value": "0"
+										},
+										{
+											"key": "limit",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/dishes/search",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZkZjdlNmU0LTE0ZTgtNGI4NS04ZWE1LTIxNDRiOGJmMWEwNCIsIm5hbWUiOiJBZG1pbiIsImlhdCI6MTY5Njk2MzE3MiwiZXhwIjoxNjk2OTkxOTcyfQ.AVMRnCSS011F0zK97lxA6FHaPrO5uKdA6igMA_SmtAg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/dishes/search?term=soup",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"dishes",
+								"search"
+							],
+							"query": [
+								{
+									"key": "term",
+									"value": "soup"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/dishes/search",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/dishes/search?term=soup",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"dishes",
+										"search"
+									],
+									"query": [
+										{
+											"key": "term",
+											"value": "soup"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/dishes/visibility/:id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZkZjdlNmU0LTE0ZTgtNGI4NS04ZWE1LTIxNDRiOGJmMWEwNCIsIm5hbWUiOiJBZG1pbiIsImlhdCI6MTY5Njg3MTA1NiwiZXhwIjoxNjk2ODk5ODU2fQ.ONeVwnB-RDxbMr0y2tDVZ3uJMk_QJUoZFT1sQ93FwFU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"visible\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/dishes/visibility/564c0561-4d15-450e-9dc4-8398c2dea4af",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"dishes",
+								"visibility",
+								"564c0561-4d15-450e-9dc4-8398c2dea4af"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/dishes/visibility/:id",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"visible\": false\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/dishes/visibility/564c0561-4d15-450e-9dc4-8398c2dea4af",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"dishes",
+										"visibility",
+										"564c0561-4d15-450e-9dc4-8398c2dea4af"
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/dishes/:id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZkZjdlNmU0LTE0ZTgtNGI4NS04ZWE1LTIxNDRiOGJmMWEwNCIsIm5hbWUiOiJBZG1pbiIsImlhdCI6MTY5Njk2MzE3MiwiZXhwIjoxNjk2OTkxOTcyfQ.AVMRnCSS011F0zK97lxA6FHaPrO5uKdA6igMA_SmtAg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Chicken",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "13",
+									"type": "text"
+								},
+								{
+									"key": "categoryId",
+									"value": "f0cfe01e-55ff-478f-a3ad-e5d273a99e53",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Hot chicken",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/home/sofia/Загрузки/chicken.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{API_URL}}/dishes/013785d3-39e0-4ae7-8a50-314ac406a409",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"dishes",
+								"013785d3-39e0-4ae7-8a50-314ac406a409"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/dishes/:id",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Chicken",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "13",
+											"type": "text"
+										},
+										{
+											"key": "categoryId",
+											"value": "f0cfe01e-55ff-478f-a3ad-e5d273a99e53",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Hot chicken",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/home/sofia/Загрузки/chicken.jpeg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{API_URL}}/dishes/564c0561-4d15-450e-9dc4-8398c2dea4af",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"dishes",
+										"564c0561-4d15-450e-9dc4-8398c2dea4af"
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/dishes/:id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZkZjdlNmU0LTE0ZTgtNGI4NS04ZWE1LTIxNDRiOGJmMWEwNCIsIm5hbWUiOiJBZG1pbiIsImlhdCI6MTY5Njk2MzE3MiwiZXhwIjoxNjk2OTkxOTcyfQ.AVMRnCSS011F0zK97lxA6FHaPrO5uKdA6igMA_SmtAg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/dishes/013785d3-39e0-4ae7-8a50-314ac406a409",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"dishes",
+								"013785d3-39e0-4ae7-8a50-314ac406a409"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/dishes/:id",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/dishes/564c0561-4d15-450e-9dc4-8398c2dea4af",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"dishes",
+										"564c0561-4d15-450e-9dc4-8398c2dea4af"
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/dishes/top",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/dishes/top?count=3",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"dishes",
+								"top"
+							],
+							"query": [
+								{
+									"key": "count",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/dishes/top",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/dishes/top?count=3",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"dishes",
+										"top"
+									],
+									"query": [
+										{
+											"key": "count",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "orders",
+			"item": [
+				{
+					"name": "/orders",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"customer\": {\n        \"name\": \"John Doe\",\n        \"phone\": \"12345678900\",\n        \"paymentMethod\": \"cash\",\n        \"orderType\": \"delivery\",\n        \"address\": \"Some address\"\n    },\n    \"dishes\": [\n        \"f95403a3-1703-47a9-be5b-283352e01102\",\n        \"f95403a3-1703-47a9-be5b-283352e01102\"\n    ],\n    \"comment\": \"Some random comment\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/orders",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/orders",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"customer\": {\n        \"name\": \"John Doe\",\n        \"phone\": \"12345678900\",\n        \"paymentMethod\": \"cash\",\n        \"orderType\": \"delivery\",\n        \"address\": \"Some address\"\n    },\n    \"dishes\": [\n        \"f95403a3-1703-47a9-be5b-283352e01102\",\n        \"f95403a3-1703-47a9-be5b-283352e01102\"\n    ],\n    \"comment\": \"Some random comment\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/orders",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"orders"
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/orders",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZkZjdlNmU0LTE0ZTgtNGI4NS04ZWE1LTIxNDRiOGJmMWEwNCIsIm5hbWUiOiJBZG1pbiIsImlhdCI6MTY5NzI5ODUwMywiZXhwIjoxNjk3MzI3MzAzfQ.QbsvZBkMEpft_hJTA-bD104c6X5KDwa6t8laX1TqgC8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/orders?limit=20&offset=0&onlyActive=false",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"orders"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "20"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "onlyActive",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/orders",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/orders?limit=20&offset=0&onlyActive=true",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"orders"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "20"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										},
+										{
+											"key": "onlyActive",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/orders/search",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZkZjdlNmU0LTE0ZTgtNGI4NS04ZWE1LTIxNDRiOGJmMWEwNCIsIm5hbWUiOiJBZG1pbiIsImlhdCI6MTY5NzI5ODUwMywiZXhwIjoxNjk3MzI3MzAzfQ.QbsvZBkMEpft_hJTA-bD104c6X5KDwa6t8laX1TqgC8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/orders/search?term=3",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"orders",
+								"search"
+							],
+							"query": [
+								{
+									"key": "term",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/orders/search",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/orders/search?term=3",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"orders",
+										"search"
+									],
+									"query": [
+										{
+											"key": "term",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/orders/status/:id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "fb94553068c1eff6f370e4e8e0a26639",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"status\": \"completed\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/orders/status/781d27e7-13f7-4e9e-b3d8-5fa7d36100bb",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"orders",
+								"status",
+								"781d27e7-13f7-4e9e-b3d8-5fa7d36100bb"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/orders/status/:id",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"status\": \"completed\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}/orders/status/781d27e7-13f7-4e9e-b3d8-5fa7d36100bb",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"orders",
+										"status",
+										"781d27e7-13f7-4e9e-b3d8-5fa7d36100bb"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "/orders/count/active",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRmNzIwMGU3LTM4ZjMtNDVlOC1hYTJmLWM5ZDllNWE2OWM1MyIsIm5hbWUiOiJBZG1pbiIsImlhdCI6MTY5ODAxMTI1MiwiZXhwIjoxNjk4MDQwMDUyfQ.7AwsXO5Gg9z6VsiTQSa_UPoGUQvgjWFIdn6oZ6QjlpM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/orders/count/active",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"orders",
+								"count",
+								"active"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/orders/count/active",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/orders/count/active",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"orders",
+										"count",
+										"active"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "dashboard",
+			"item": [
+				{
+					"name": "/dashboard/stats/general",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRmNzIwMGU3LTM4ZjMtNDVlOC1hYTJmLWM5ZDllNWE2OWM1MyIsIm5hbWUiOiJBZG1pbiIsImlhdCI6MTY5ODM1NTMyMSwiZXhwIjoxNjk4Mzg0MTIxfQ.9DaX6gJPNsmCe5U0v7OVjRF_ShAe6Z7FSd6P2qWDiAY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/dashboard/stats/general?start=1698268047351&end=1698268047351",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"dashboard",
+								"stats",
+								"general"
+							],
+							"query": [
+								{
+									"key": "start",
+									"value": "1698268047351"
+								},
+								{
+									"key": "end",
+									"value": "1698268047351"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/dashboard/stats/general",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/dashboard/stats/general?start=1698268047351&end=1698268047351",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"dashboard",
+										"stats",
+										"general"
+									],
+									"query": [
+										{
+											"key": "start",
+											"value": "1698268047351"
+										},
+										{
+											"key": "end",
+											"value": "1698268047351"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "/dashboard/stats/detailed",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRmNzIwMGU3LTM4ZjMtNDVlOC1hYTJmLWM5ZDllNWE2OWM1MyIsIm5hbWUiOiJBZG1pbiIsImlhdCI6MTY5ODM1NTMyMSwiZXhwIjoxNjk4Mzg0MTIxfQ.9DaX6gJPNsmCe5U0v7OVjRF_ShAe6Z7FSd6P2qWDiAY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/dashboard/stats/detailed?start=1698268047351&end=1698268047351",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"dashboard",
+								"stats",
+								"detailed"
+							],
+							"query": [
+								{
+									"key": "start",
+									"value": "1698268047351"
+								},
+								{
+									"key": "end",
+									"value": "1698268047351"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/dashboard/stats/detailed",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/dashboard/stats/detailed?start=1698268047351&end=1698268047351",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"dashboard",
+										"stats",
+										"detailed"
+									],
+									"query": [
+										{
+											"key": "start",
+											"value": "1698268047351"
+										},
+										{
+											"key": "end",
+											"value": "1698268047351"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "/dashboard/stats/daily",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRmNzIwMGU3LTM4ZjMtNDVlOC1hYTJmLWM5ZDllNWE2OWM1MyIsIm5hbWUiOiJBZG1pbiIsImlhdCI6MTY5ODM1NTMyMSwiZXhwIjoxNjk4Mzg0MTIxfQ.9DaX6gJPNsmCe5U0v7OVjRF_ShAe6Z7FSd6P2qWDiAY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/dashboard/stats/daily?start=169826804&end=1698268047351",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"dashboard",
+								"stats",
+								"daily"
+							],
+							"query": [
+								{
+									"key": "start",
+									"value": "169826804"
+								},
+								{
+									"key": "end",
+									"value": "1698268047351"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/dashboard/stats/daily",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/dashboard/stats/daily?start=1698268047351&end=1698268047351",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"dashboard",
+										"stats",
+										"daily"
+									],
+									"query": [
+										{
+											"key": "start",
+											"value": "1698268047351"
+										},
+										{
+											"key": "end",
+											"value": "1698268047351"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "/dashboard/dishes/favorite",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRmNzIwMGU3LTM4ZjMtNDVlOC1hYTJmLWM5ZDllNWE2OWM1MyIsIm5hbWUiOiJBZG1pbiIsImlhdCI6MTY5ODM1NTMyMSwiZXhwIjoxNjk4Mzg0MTIxfQ.9DaX6gJPNsmCe5U0v7OVjRF_ShAe6Z7FSd6P2qWDiAY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/dashboard/dishes/favorite?start=107726&end=1698356323532",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"dashboard",
+								"dishes",
+								"favorite"
+							],
+							"query": [
+								{
+									"key": "start",
+									"value": "107726"
+								},
+								{
+									"key": "end",
+									"value": "1698356323532"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/dashboard/dishes/favorite",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/dashboard/dishes/favorite?start=1698268047351&end=1698268047351",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"dashboard",
+										"dishes",
+										"favorite"
+									],
+									"query": [
+										{
+											"key": "start",
+											"value": "1698268047351"
+										},
+										{
+											"key": "end",
+											"value": "1698268047351"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "/dashboard/customers/platinum",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRmNzIwMGU3LTM4ZjMtNDVlOC1hYTJmLWM5ZDllNWE2OWM1MyIsIm5hbWUiOiJBZG1pbiIsImlhdCI6MTY5ODM1NTMyMSwiZXhwIjoxNjk4Mzg0MTIxfQ.9DaX6gJPNsmCe5U0v7OVjRF_ShAe6Z7FSd6P2qWDiAY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/dashboard/customers/platinum?start=107726&end=1698268047351",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"dashboard",
+								"customers",
+								"platinum"
+							],
+							"query": [
+								{
+									"key": "start",
+									"value": "107726"
+								},
+								{
+									"key": "end",
+									"value": "1698268047351"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/dashboard/customers/platinum",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/dashboard/customers/platinum?start=1698268047351&end=1698268047351",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"dashboard",
+										"customers",
+										"platinum"
+									],
+									"query": [
+										{
+											"key": "start",
+											"value": "1698268047351"
+										},
+										{
+											"key": "end",
+											"value": "1698268047351"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "/dashboard/orders/costly",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRmNzIwMGU3LTM4ZjMtNDVlOC1hYTJmLWM5ZDllNWE2OWM1MyIsIm5hbWUiOiJBZG1pbiIsImlhdCI6MTY5ODM1NTMyMSwiZXhwIjoxNjk4Mzg0MTIxfQ.9DaX6gJPNsmCe5U0v7OVjRF_ShAe6Z7FSd6P2qWDiAY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/dashboard/orders/costly?start=107726&end=1698268047351",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"dashboard",
+								"orders",
+								"costly"
+							],
+							"query": [
+								{
+									"key": "start",
+									"value": "107726"
+								},
+								{
+									"key": "end",
+									"value": "1698268047351"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/dashboard/orders/costly",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}/dashboard/orders/costly?start=1698268047351&end=1698268047351",
+									"host": [
+										"{{API_URL}}"
+									],
+									"path": [
+										"dashboard",
+										"orders",
+										"costly"
+									],
+									"query": [
+										{
+											"key": "start",
+											"value": "1698268047351"
+										},
+										{
+											"key": "end",
+											"value": "1698268047351"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "/ping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL}}/ping",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"ping"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/ping",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/ping",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"ping"
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "/managers/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Admin\",\n    \"password\": \"tester\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_URL}}/managers/login",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"managers",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/managers/login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Admin\",\n    \"password\": \"123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/managers/login",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"managers",
+								"login"
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "API_URL",
+			"value": "http://localhost:3000/api/v1",
+			"type": "string"
+		}
+	]
+}
